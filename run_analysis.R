@@ -31,3 +31,4 @@ by(Dt2, Dt2[,c(1:2)] , FUN = function(dt) { r <- data.frame(dt[1,1], dt[1,2]);
         mapply(function(a) { r <<- cbind(r, mean(a)) }, dt[,-(1:2)]);      res <<- rbind(res, r);  })
 
 names(res) <- names(Dt2)
+res
